@@ -1,0 +1,41 @@
+.mainDiv {
+    /* centers a div */
+    display: flex;
+    min-height: 40vh;
+    justify-content: center;
+    align-items: center;
+    color: darkblue;
+    background-color: lime;
+
+    margin: 20%;
+    border-radius: 30px; /* Zaokrąglenie rogów */
+}
+
+.cryptoPrices {
+}
+
+.cryptoList {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    padding: h 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.DataSourceIndicator {
+    margin-top: 0.6rem;
+    padding-left: 9rem;
+    color: red;
+    margin-right: auto;
+}
+
+.clearCacheBTN {
+}

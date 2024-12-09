@@ -1,0 +1,54 @@
+.stars {
+    display: flex;
+    gap: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+.starFilled {
+    color: #ffd700;
+    font-size: 1.5rem;
+}
+
+.starEmpty {
+    color: #cccccc;
+    font-size: 1.5rem;
+}
+.addBtn {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #c4a9e4;
+    color: #28262c;
+    font: inherit;
+    cursor: pointer;
+}
+.discardBtn {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #000000;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+.form input[type="date"] {
+    display: block;
+    width: 100%;
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #c4a9e4;
+    color: #28262c;
+}
+
+/* Optional: Hover effect for stars */
+.stars span:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}

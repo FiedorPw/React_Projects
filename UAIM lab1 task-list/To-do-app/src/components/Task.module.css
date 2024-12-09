@@ -1,0 +1,118 @@
+.task {
+    margin: 0.5rem 0; /* Reduced from 1rem */
+    padding: 1rem; /* Reduced from 1.5rem */
+    background-color: #9c7eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem; /* Reduced from 1rem */
+}
+
+.title {
+    margin: 0;
+    color: #2a1b3d;
+    font-size: 1.2rem; /* Reduced from 1.4rem */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Reduced from 1rem */
+}
+
+.details {
+    color: #44355b;
+    margin: 0;
+    line-height: 1.3; /* Reduced from 1.5 */
+}
+
+.metadata {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem; /* Reduced from 0.8rem */
+}
+
+.dateStatus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statusContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem; /* Reduced from 0.5rem */
+}
+
+.statusLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem; /* Reduced from 0.5rem */
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 28px; /* Reduced from 30px */
+    height: 28px; /* Reduced from 30px */
+    cursor: pointer;
+}
+.oczekujące {
+    border-left: 4px solid #4caf50;
+    background-color: #9c7eee;
+}
+
+.wykonane {
+    border-left: 4px solid #2196f3;
+    background-color: #d8d8d8;
+    opacity: 0.8;
+}
+
+.przeterminowane {
+    border-left: 4px solid #f44336;
+    background-color: #ff9e9e;
+}
+
+.expiredDate {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.statusText {
+    margin-left: 0.5rem;
+}
+
+/* Checkbox styling for different states */
+.checkbox:checked + .statusText {
+    color: #2196f3;
+    font-weight: bold;
+}
+
+.przeterminowane .checkbox {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.task {
+    transition: all 0.3s ease;
+}
+
+/* Additional hover effects */
+.task:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.deleteButton {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.task:hover .deleteButton {
+    opacity: 1;
+}
